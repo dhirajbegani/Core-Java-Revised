@@ -1,0 +1,14 @@
+Stack Memory:
+  The stack grows and shrinks as functions push and pop local variables
+  There is no need to manage the memory yourself, variables are allocated and freed automatically
+  Stack memory has size limits
+  Stack variables only exist while the function that created them, is running.
+  
+ Heap Memory:
+  Variables can be accessed globally
+  No limit on memory size
+  Relatively slower access
+  No guaranteed efficient use of space, memory may become fragmented over time as blocks of memory are allocated, then freed.
+  Garbage Collector is an automatic memory management system that reclaims heap memory for objects.
+  
+  
