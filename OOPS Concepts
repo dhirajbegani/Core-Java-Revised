@@ -1,5 +1,5 @@
 # OOPS Concepts 
-1. Encapsulation, IS-A, HAS-A
+1. Encapsulation (IS-A/HAS-A)
 Encapsulation helps hide implementation behind an interface (or API).
 Encapsulated code has two features:
        Instance variables are kept protected (usually with the private modifier).
@@ -9,17 +9,26 @@ IS-A is expressed with the keyword extends.
 IS-A, "inherits from," and "is a subtype of " are all equivalent expressions.
 HAS-A means an instance of one class "has a" reference to an instance of another class or another instance of the same class.
 
-2. Inheritance (Objective 5.5)
+Encapsulation is all about wrapping variables and methods in one single unit. 
+Data Hiding.
+
+2.Abstraction
+Abstraction is a process of hiding the implementation details from the user, only the functionality will be provided to the user.
+In other words, the user will have the information on what the object does instead of how it does it.
+
+3. Inheritance
 Inheritance allows a class to be a subclass of a superclass, and thereby inherit public and protected variables and methods of the superclass.
 Inheritance is a key concept that underlies IS-A, polymorphism, overriding, overloading, and casting.
 All classes (except class Object), are subclasses of type Object, and therefore they inherit Object's methods.
 
-3. Polymorphism
+4. Polymorphism
 Polymorphism means "many forms."
 A reference variable is always of a single, unchangeable type, but it can refer to a subtype object.
 A single object can be referred to by reference variables of many different types —as long as they are the same type or a supertype of the object.
 The reference variable's type (not the object's type), determines which methods can be called.
 Polymorphic method invocations apply only to overridden instance methods.
+
+
 
 Overriding and Overloading
 Methods can be overridden or overloaded; constructors can be overloaded but not overridden.
