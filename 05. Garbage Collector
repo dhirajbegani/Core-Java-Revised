@@ -1,7 +1,6 @@
 
 Garbage Collector ---
-In Java, the programmers don’t need to take care of destroying the objects that are out of use. 
-The Garbage Collector takes care of it.
+Garbage Collector takes care of destroying the objects that are out of use. 
 Garbage Collector is a Daemon thread that keeps running in the background. 
 Basically, it frees up the heap memory by destroying the unreachable objects.
 Unreachable objects are the ones that are no longer referenced by any part of the program.
