@@ -1,0 +1,21 @@
+PermGen (Permanent Generation) is a special heap space separated from the main memory heap.
+
+The JVM keeps track of loaded class metadata in the PermGen. 
+Additionally, the JVM stores all the static content in this memory section. 
+This includes all the static methods, primitive variables, and references to the static objects.
+Furthermore, it contains data about bytecode, names and JIT information.
+
+Most importantly, Oracle completely removed this memory space in JDK 8 release.
+With its limited memory size, PermGen is involved in generating the famous OutOfMemoryError. 
+Simply put, the class loaders aren't garbage collected properly and, as a result, generated a memory leak.
+
+
+
+Metaspace is a new memory space – starting from the Java 8 version.
+It has replaced the older PermGen memory space. 
+The most significant difference is how it handles the memory allocation.
+
+As a result, this native memory region grows automatically by default. 
+Here we also have new flags to tune-up the memory:
+By default class metadata allocation is limited by the amount of available native memory.
+
