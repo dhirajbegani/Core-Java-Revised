@@ -1,0 +1,24 @@
+
+String Interning
+As Strings are immutable, JVM can optimize memory allocated to it by storing only one copy of each literal String in String pool, this iscalled interning.
+
+When we create new String JVM first look up it's value in String Pool and if match found 
+then instead of creating new literal, only new meomry reference is assigned to same literal.
+
+But when String is created using new operator, a new object is created and seperate memory is allocated to it.
+String created using new operator can be interned manually in the Java String Pool by calling the intern().
+
+String one = "Dhiraj";
+String two = "Dhiraj";
+
+one==two //True
+
+String three = new String("Dhiraj");
+String four  = new String("Dhiraj");
+
+one==three //False
+three==four //False
+
+But equals method returns true if value of string is matching irrespective of creation method.
+one.equals(three) //True
+three.equals(four)//True
