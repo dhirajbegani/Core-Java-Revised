@@ -22,3 +22,7 @@ three==four //False
 But equals method returns true if value of string is matching irrespective of creation method.
 one.equals(three) //True
 three.equals(four)//True
+
+
+String Pool is stored in Perm Gen earlier.
+Now String Pool is stored in metaspace which can expand dynamically and unreferenced strings are eligible for garbage collection.
