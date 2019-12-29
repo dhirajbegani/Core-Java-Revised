@@ -1,0 +1,23 @@
+Island Of Isolation:
+
+In Java inaccessible objects are freed from memory by Garbage Collector.
+State where Objects are still referenced by other objects but they are still eligible for garbage collection is Island of Isolation.
+
+Class Test{
+Test obj;
+}
+
+
+Test t1 = new Test();
+Test t2 = new Test();
+
+t1.obj = t2;
+
+t2.obj = t1;
+
+// as of now no objects are eligible for garbage collection as t2 is referring them.
+t1= null;
+
+t2=null;
+// Now object t1 and t2 are in island of Isolation.
+//There is no way for external program to access them and the're still referring each other.
