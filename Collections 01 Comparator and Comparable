@@ -1,0 +1,12 @@
+
+Comparator and Comparable are two java interface used to used to sort objects based on values of data members.
+
+
+Comparable interface compare object with itself and Class must implement this interface by itself to be compared.
+Comparable interface uses compareTo method to compare objects, as there is single implementation on "single sorting sequence" is provided by comparator.
+
+
+
+Comparator is a external element which is used to compare two objects.
+We can write multiple classes to implement Comparator using different data memebers hence multiple sorting sequence can be provided.
+Comparator uses compare method to sort objects.
